@@ -8,6 +8,10 @@
 <script>
 import HelloWorld from './components/Item.vue'
 
+/**
+ * TODO routing
+ * ref : http://blog.jeonghwan.net/2018/04/07/vue-router.html
+ */
 export default {
   name: 'app',
   components: {
