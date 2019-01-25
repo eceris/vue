@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--<Topic msg="Welcome to Your Vue.js App"/>-->
+    <Todo></Todo>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/Item.vue'
+// import Topic from './components/Topic.vue'
+import Todo from './components/Todo.vue'
 
 /**
  * TODO routing
@@ -15,7 +17,8 @@ import HelloWorld from './components/Item.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    // Topic,
+    Todo
   }
 }
 </script>
