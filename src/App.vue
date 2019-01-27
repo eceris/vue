@@ -21,13 +21,11 @@ import VueRouter from 'vue-router'
  * TODO routing
  * ref : http://blog.jeonghwan.net/2018/04/07/vue-router.html
  */
-var routes = [
-  { path: '/todo', component: Todo },
-  { path: '/topic', component: Topic }
-];
-
 var router = new VueRouter({
-  routes // `routes: routes`의 줄임
+  routes : [
+    { path: '/todo', component: Todo },
+    { path: '/topic', component: Topic }
+  ]
 });
 
 
@@ -38,7 +36,10 @@ export default {
     // Topic,
     // Todo
   },
-  router : router
+  router : router,
+  created: function() {
+    router.push('/todo');
+  }
 }
 </script>
 
