@@ -10,7 +10,7 @@
                             tag="article"
                             class="mb-2">
                         <p class="card-text">{{topic.description}}</p>
-                        <b-button href="#" variant="primary">See it!</b-button>
+                        <b-button variant="primary" v-on:click="get">See it!</b-button>
                     </b-card>
                 </td>
             </tr>
@@ -22,7 +22,7 @@
 <script>
     export default {
         name: "topic",
-        data : function() {
+        data: function () {
             return {
                 topics: [
                     {
@@ -40,6 +40,18 @@
                     }
                 ]
             }
+        },
+        methods: {
+            get: function () {
+                console.log('test');
+                debugger;
+                // this.$http.get('www.naver.com')
+                //     .then( result => {
+                //         return result;
+                //     });
+            }
+
+
         }
     }
 </script>
