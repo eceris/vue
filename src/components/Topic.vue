@@ -20,6 +20,7 @@
 </template>
 
 <script>
+    /* eslint-disable */
     export default {
         name: "topic",
         data: function () {
@@ -44,11 +45,15 @@
         methods: {
             get: function () {
                 console.log('test');
+                console.log(process.env.ROOT_API);
                 debugger;
-                // this.$http.get('www.naver.com')
-                //     .then( result => {
-                //         return result;
-                //     });
+
+                this.$http.get('www.naver.com')
+                    .then( result => {
+                        debugger;
+                        console.log(process.env.ROOT_API);
+                        return result;
+                    });
             }
 
 
